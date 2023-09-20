@@ -1,0 +1,121 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.nav { 
+    grid-area: 1 / 1 / 2 / 11;; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    color: white;
+}
+
+.background { 
+    grid-area: 2 / 1 / 5 / 11; 
+    align-self: center;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.posts { 
+    grid-area: 5 / 2 / 11 / 10;
+    height: 100%;
+    padding: 0 10vw;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 0.5px solid lightgray;
+    background-color: rgba(235, 231, 231, 0.507);
+    height: 25px;
+    width: 100%
+}
+
+.date-container > span {
+    margin-right: 1000px;
+    font-size: 22px;
+}
+
+.post-pic {
+    display: grid; 
+    grid-template-columns: 264px; 
+    grid-template-rows: 261fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "postpic"; 
+    grid-area: 6 / 3 / 8 / 4; 
+}
+
+.postpic { grid-area: postpic; }
+
+.post-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    max-width: 75%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.post-info { 
+    grid-area: 6 / 5 / 8 / 7; 
+}
+
+.divider { grid-area: 8 / 3 / 9 / 9; }
+
+.divider > hr {
+    margin-top: 20px;
+}
+
+.info-container {
+    height: 100%;
+}
+
+.readmore { grid-area: 7 / 8 / 8 / 9;; }
+
+.button-container {
+    height: 100%;
+}
+
+.button-container > a, button {
+    width: 120px;
+    height: 60px;
+    color: white;
+    background-color: orange;
+    border: 1px solid burlywood;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer { grid-area: 11 / 1 / 16 / 11; }
+
+.map { grid-area: 12 / 2 / 15 / 4; }
+
+.footer-info { grid-area: 12 / 4 / 15 / 10; }
