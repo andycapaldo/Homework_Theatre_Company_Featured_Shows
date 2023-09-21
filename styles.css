@@ -41,7 +41,7 @@
 
 .posts { 
     grid-area: 5 / 2 / 11 / 10;
-    height: 100%;
+    height: 400%;
     padding: 0 10vw;
 }
 
@@ -91,20 +91,29 @@
 .divider { grid-area: 8 / 3 / 9 / 9; }
 
 .divider > hr {
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
 .info-container {
     height: 100%;
+    width: 100%;
 }
 
-.readmore { grid-area: 7 / 8 / 8 / 9;; }
+.info-container > h2, p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.readmore { grid-area: 6 / 8 / 7 / 9;; }
 
 .button-container {
     height: 100%;
+    width: 100%;
 }
 
-.button-container > a, button {
+.button-container > button {
     width: 120px;
     height: 60px;
     color: white;
@@ -112,10 +121,71 @@
     border: 1px solid burlywood;
     font-size: 20px;
     text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    margin-left: 1000px;
+    margin-bottom: 1000px;
 }
 
-.footer { grid-area: 11 / 1 / 16 / 11; }
+.footer { 
+    grid-area: 11 / 1 / 16 / 11;
+    height: 100%;
+    background-color: black;
+}
 
-.map { grid-area: 12 / 2 / 15 / 4; }
+.map { 
+    grid-area: 12 / 2 / 15 / 4; 
+    height: 100%;
+}
 
-.footer-info { grid-area: 12 / 4 / 15 / 10; }
+.footer-info { grid-area: 12 / 4 / 15 / 10;
+    height: 100%;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* .footer-info-container > h1, i, p {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 400px;
+}
+*/
+
+.footer-shows-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+/*.footer-shows-container > h1, p {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */ 
+
+/* The two above commented selectors messed up the orientation of the .info-container code. */
+
+.footer-social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-social-container > a {
+    text-decoration: none;
+    color: white;
+}
